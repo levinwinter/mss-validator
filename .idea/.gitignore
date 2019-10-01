@@ -281,3 +281,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/git,node,windows,intellij,webstorm
+
+# Default ignored files
+/workspace.xml

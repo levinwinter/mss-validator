@@ -1,6 +1,8 @@
-class Kombination {
+import { mappings } from "./mappings.js";
+
+export class Combination {
     constructor(lk1, lk2, lk3) {
-        this.lk = [];
+        this.majors = [];
         this.lk.push(lk1, lk2, lk3);
     }
     normalize() {
@@ -8,7 +10,7 @@ class Kombination {
     }
     translate() {
         this.lk.forEach((value, index) => {
-            this.lk[index] = mapping.get(value);
+            this.lk[index] = mappings.get(value);
         });
     }
     equals(combination) {
