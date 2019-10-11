@@ -1,0 +1,24 @@
+import {subjects} from "./subjects.js";
+import {fields} from "./fields.js";
+
+export let mappings = new Map();
+mappings.set(subjects.D, fields.D);
+mappings.set(subjects.E, fields.FS);
+mappings.set(subjects.F, fields.FS);
+mappings.set(subjects.L, fields.FS);
+mappings.set(subjects.SN, fields.FS);
+mappings.set(subjects.BK, fields.KF);
+mappings.set(subjects.MU, fields.KF);
+mappings.set(subjects.G, fields.GW);
+mappings.set(subjects.EK, fields.GW);
+mappings.set(subjects.SK, fields.GW);
+mappings.set(subjects.M, fields.M);
+mappings.set(subjects.PH, fields.NW);
+mappings.set(subjects.CH, fields.NW);
+mappings.set(subjects.BI, fields.NW);
+mappings.set(subjects.IN, fields.INF);
+mappings.set(subjects.ER, fields.R);
+mappings.set(subjects.KR, fields.R);
+mappings.set(subjects.ET, fields.R);
+mappings.set(subjects.SP, fields.SP);
+mappings.set(subjects.PI, fields.PHI);
