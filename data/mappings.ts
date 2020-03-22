@@ -1,5 +1,5 @@
-import {subjects} from "./subjects.js";
-import {fields} from "./fields.js";
+import { subjects } from "./subjects.js";
+import { fields } from "./fields.js";
 
 export let mappings = new Map();
 mappings.set(subjects.D, fields.D);
@@ -12,6 +12,7 @@ mappings.set(subjects.MU, fields.KF);
 mappings.set(subjects.G, fields.GW);
 mappings.set(subjects.EK, fields.GW);
 mappings.set(subjects.SK, fields.GW);
+mappings.set(subjects.EKSK, fields.GW);
 mappings.set(subjects.M, fields.M);
 mappings.set(subjects.PH, fields.NW);
 mappings.set(subjects.CH, fields.NW);
