@@ -9,6 +9,7 @@ mappings.set(subjects.L, fields.FS);
 mappings.set(subjects.SN, fields.FS);
 mappings.set(subjects.BK, fields.KF);
 mappings.set(subjects.MU, fields.KF);
+mappings.set(subjects.DS, fields.KF);
 mappings.set(subjects.G, fields.GW);
 mappings.set(subjects.EK, fields.GW);
 mappings.set(subjects.SK, fields.GW);

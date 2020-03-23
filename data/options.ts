@@ -1,7 +1,7 @@
 import { Option } from "../scripts/option.js";
 import { fields as f } from "./fields.js";
 
-let options = new Map();
+export let options = new Map();
 
 options.set(1, new Option(
     [f.FS, f.M, f.D],

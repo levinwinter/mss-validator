@@ -1,5 +1,5 @@
-import { fields } from "../data/fields.js";
-import { Combination } from "./combination.js";
+import {fields} from "../data/fields.js";
+import {Combination} from "./combination.js";
 import {Choice} from "./choice.js";
 
 export class Option {
@@ -36,18 +36,24 @@ export class Option {
     possibleAdvancedCourses(choice: Choice): fields[] {
         let possibleAdvancedCourses: fields[] = [];
         this.combinations.forEach((combination) => {
-            combination.possibleAdvancedCourses(choice).forEach((field) => {
-                if (!possibleAdvancedCourses.includes(field)) possibleAdvancedCourses.push(field);
-            });
+            // only target supersets to prevent code from recommending unavailable courses
+            if (combination.isSupersetOf(choice)) {
+                combination.possibleAdvancedCourses(choice).forEach((field) => {
+                    if (!possibleAdvancedCourses.includes(field)) possibleAdvancedCourses.push(field);
+                });
+            }
         });
         return possibleAdvancedCourses;
     }
     possibleBasicCourses(choice: Choice): fields[] {
         let possibleBasicCourses: fields[] = [];
         this.combinations.forEach((combination) => {
-            combination.possibleBasicCourses(choice).forEach((field) => {
-                if (!possibleBasicCourses.includes(field)) possibleBasicCourses.push(field);
-            });
+            // only target supersets to prevent code from recommending unavailable courses
+            if (combination.isSupersetOf(choice)) {
+                combination.possibleBasicCourses(choice).forEach((field) => {
+                    if (!possibleBasicCourses.includes(field)) possibleBasicCourses.push(field);
+                });
+            }
         });
         return possibleBasicCourses;
     }
