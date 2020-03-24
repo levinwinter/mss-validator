@@ -1,0 +1,51 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+.choice {
+    width: 100%;
+}
+
+.choice p {
+    padding-left: 23px;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.choice ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.choice ul li {
+    padding-left: 23px;
+    margin-bottom: 9px;
+    font-size: 5vw;
+}
+
+.choice ul li button {
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    width: 13vw;
+    height: 13vw;
+    margin-right: 9px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vw;
+}
+
+.choice ul li .background {
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    height: 34px;
+    margin-top: calc((13vw - 34px) / 2);
+    border: solid 1px black;
+}
