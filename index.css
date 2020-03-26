@@ -1,51 +1,83 @@
+:root {
+    --standard-height: 15vw;
+    --standard-margin: 6vw;
+    --outline-width: 0.5vw;
+
+    --card-text-padding: 4vw;
+
+    --choice-top-margin: 4vw;
+    --choice-bottom-margin: 4vw;
+    --button-margin: 2vw;
+    --choice-text-margin-left: 2vw;
+    --choice-background-height-factor: 2.2;
+
+    --color-white: #FFFFFF;
+    --color-active: #FFDD00;
+    --color-disabled: #EEEEEE;
+    --color-forbidden: #D9D9D9;
+    --color-dark: #707070;
+
+    --font-size-bigger: 5.5vw;
+    --font-size-normal: 4.5vw;
+
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    --font-weight-thin: 100;
+}
+
 body {
-    font-family: 'Fira Sans', sans-serif;
     margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--color-dark);
 }
 
-.choice {
-    width: 100%;
-}
-
-.choice p {
-    padding-left: 23px;
-    font-size: 5vw;
-    font-weight: 500;
-}
-
-.choice ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.choice ul li {
-    padding-left: 23px;
-    margin-bottom: 9px;
-    font-size: 5vw;
-}
-
-.choice ul li button {
-    background-color: white;
-    border: solid 1px black;
-    color: black;
-    width: 13vw;
-    height: 13vw;
-    margin-right: 9px;
-    padding: 0;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 5vw;
-}
-
-.choice ul li .background {
-    z-index: -1;
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
+.nav {
+    z-index: 3;
+    position: sticky;
+    top: 0;
     left: 0;
     right: 0;
-    height: 34px;
-    margin-top: calc((13vw - 34px) / 2);
-    border: solid 1px black;
+    height: var(--standard-height);
+
+}
+
+.nav * {
+    position: fixed;
+    top: 0;
+    height: var(--standard-height);
+    line-height: var(--standard-height);
+    text-align: center;
+
+    background-color: var(--color-white);
+    outline: solid var(--outline-width) var(--color-dark);
+}
+
+.nav .title {
+    left: var(--standard-height);
+    right: var(--standard-height);
+
+    font-size: var(--font-size-bigger);
+    font-weight: var(--font-weight-medium);
+}
+
+.nav .progress, .nav .help {
+    width: var(--standard-height);
+
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-light);
+}
+
+.nav .progress {
+    left: 0;
+}
+
+.nav .help {
+    right: 0;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
 }

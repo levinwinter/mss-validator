@@ -3,7 +3,6 @@ import { fields } from "../data/fields.js";
 import { mappings } from "../data/mappings.js";
 import { Combination } from "./combination.js";
 
-
 export class Choice extends Combination {
     constructor(advancedCourses: subjects[], basicCourses: subjects[]) {
         let advancedCoursesTranslated: fields[] = [];

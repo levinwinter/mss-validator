@@ -1,4 +1,4 @@
-import {Combination} from "../scripts/combination.js";
+import {Combination} from "../models/combination.js";
 import {fields} from "../data/fields.js";
 
 import {expect} from "chai";
