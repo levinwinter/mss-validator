@@ -1,0 +1,49 @@
+.choice {
+    margin: var(--standard-margin) 0;
+}
+
+.choice .heading {
+    margin-left: var(--standard-margin);
+    font-size: var(--font-size-bigger);
+    font-weight: var(--font-weight-medium);
+}
+
+.choice ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.choice ul li {
+    margin-left: calc(var(--standard-margin) - var(--button-margin));
+
+    font-size: var(--font-size-normal);
+}
+
+.choice ul li .button {
+    display: inline-block;
+
+    width: var(--standard-height);
+    height: var(--standard-height);
+    margin: var(--button-margin);
+
+    text-align: center;
+    line-height: var(--standard-height);
+}
+
+.choice ul li .text {
+    margin-left: var(--choice-text-margin-left);
+}
+
+.choice ul li .background {
+    position: absolute;
+    height: calc(var(--font-size-normal) * var(--choice-background-height-factor));
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: calc(var(--button-margin) + (var(--standard-height) - var(--font-size-normal) * var(--choice-background-height-factor)) / 2);
+
+    z-index: -1;
+
+    outline: solid var(--outline-width) var(--color-dark);
+}

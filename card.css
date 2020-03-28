@@ -1,0 +1,20 @@
+.card {
+    margin: var(--standard-margin);
+    outline: solid var(--outline-width) var(--color-dark);
+    
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-light);
+    text-align: center;
+}
+
+.card .text {
+    padding: var(--card-text-padding);
+}
+
+.card .button {
+    padding: var(--card-text-padding);
+    
+    text-align: right;
+    
+    outline: solid var(--outline-width) var(--color-dark);
+}

@@ -1,0 +1,23 @@
+.button {
+    background: var(--color-white);
+    outline: solid var(--outline-width) var(--color-dark);
+    
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--color-dark);
+    font-size: var(--font-size-normal);
+}
+
+.button.active {
+    background-color: var(--color-active);
+}
+
+.button.disabled {
+    background-color: var(--color-disabled);
+    font-weight: var(--font-weight-thin);
+}
+
+.button.forbidden {
+    color: var(--color-forbidden);
+    background-color: var(--color-forbidden);
+    opacity: 0.5;
+}
